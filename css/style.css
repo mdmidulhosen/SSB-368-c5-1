@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a, a:hover{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+/*google fonts link*/
+
+/*font-family: 'Alfa Slab One', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+/*google fonts link*/
+
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+.banner{
+	background: url(../images/background.png);
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.header{
+	padding: 42px;
+}
+.navbar-1{
+	display: flex;
+	justify-content: space-between;
+}
+.contact{
+	text-align: right;
+}
+.contact span{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color:#3d2514;
+	font-size: 16px;
+	margin-left: 12px;
+    vertical-align: middle;
+}
+.contact img{
+	vertical-align: middle;
+}
+.list{
+	text-align: right;
+}
+.list ul li {
+	list-style: none;
+	display: inline-block;
+	/*padding: 16px 0;*/
+	margin-top: 16px;
+	margin-left: 42px;
+	letter-spacing: 4px;
+	position: relative;
+}
+.list ul li::before{
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 0%;
+	background: green;
+	bottom: 0;
+	right: 0;
+	transition: 0,5s;
+}
+.list ul li:hover::before{
+	width: 100%;
+	transition: 0.5s;
+}
+.list ul li::after{
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 0%;
+	background: red;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.list ul li:hover::after{
+	width: 100%;
+	transition: 0.5s;
+}
+
+
+
+.list ul li a {
+font-family: 'Bebas Neue', cursive;
+text-transform: uppercase;
+font-size: 20px;
+color: #3d2514;
+}
+ 
+.nav-2{
+	display: flex;
+	justify-content: space-between;
+}
+.b-right img{
+	max-width: 100%;
+	height: auto;
+}
+.b-right{
+flex-basis: 50%;
+position: relative;
+}
+.pt{
+	position: absolute;
+	left: 2px;
+    bottom: -8px;
+}
+.b-left{
+flex-basis: 50%;
+    margin-top: 102px;
+}
+.b-left p {
+	font-family: 'Bebas Neue', cursive;
+	color: #3d2514;
+	font-size: 24px;
+	border: 2px dashed #3d2514 ;
+	display: inline-block;
+	display: inline-block;
+    padding: 8px 14px;
+}
+.b-left h1{
+ font-size: 114px;
+ color: #3d2514;
+ text-transform: uppercase;
+ font-family: 'Alfa Slab One', cursive;
+ text-shadow: 5px 5px #ead9d9;
+ letter-spacing: 2px;
+}
+.b-left h2{
+font-size: 56px;
+ color: #3d2514;
+ text-transform: uppercase;
+ font-family: 'Alfa Slab One', cursive;
+ text-shadow: 3px 3px #ead9d9;
+ letter-spacing: 2px;
+}
